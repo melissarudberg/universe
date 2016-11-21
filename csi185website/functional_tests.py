@@ -58,18 +58,16 @@ class NewVisitorTest(unittest.TestCase):
         # the 'id' of this area is 'keyboard'
 
         # this is how we find that area.
-        a=self.browser.find_element_by_id('keyboard')
+        a=self.browser.find_element_by_id('pathway')
 
         # this is how we click on it.
         a.click()
 
         # after clicking on it, we should see the next page.
         e=self.browser.find_element_by_css_selector("h1")
-        self.assertIn('Keyboards',e.text)
+        self.assertIn('pathway',e.text)
 
         # The page should have a picture of a teletype machine. 
-        m=self.browser.find_element_by_tag_name('img')
-        self.assertIn('teletype.jpg',m.get_attribute('src'))
     
 
 if __name__=="__main__":
