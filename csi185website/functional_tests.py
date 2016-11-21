@@ -45,7 +45,7 @@ class NewVisitorTest(unittest.TestCase):
         # In general this is how we check for images on a page.
 
         m=self.browser.find_element_by_tag_name('img')
-        self.assertIn('homebrew.png',m.get_attribute('src'))
+        self.assertIn('journeytolighthouse.jpg',m.get_attribute('src'))
 
         # We check here for the title of your home page.
         # uncomment the next lines and change the text when you set your title.
