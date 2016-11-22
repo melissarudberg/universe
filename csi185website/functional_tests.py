@@ -65,7 +65,7 @@ class NewVisitorTest(unittest.TestCase):
 
         # after clicking on it, we should see the next page.
         e=self.browser.find_element_by_css_selector("h1")
-        self.assertIn('pathway',e.text)
+        self.assertIn('Beginning of Time',e.text)
 
         # The page should have a picture of a teletype machine. 
     
